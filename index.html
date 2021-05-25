@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <link rel="stylesheet" href="public/dist/styles.css">
+</head>
+<body>
+    <h1 class="text-center my-10 text-4xl">Responsive Navigation</h1>
+    <nav class="flex flex-col md:flex-row bg-gray-200 p-5">
+        <div class="flex flex-wrap justify-between items-center">
+            <div>
+                <svg id="logo" class="logo" data-name="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="50" height="50">
+                    <defs>
+                        <style>.cls-1{fill:#1d1d1b;}</style>
+                    </defs>
+                    <path class="cls-1" d="M191.73,125.07A33.34,33.34,0,0,0,158.4,91.73H91.73v100H158.4a33.34,33.34,0,0,0,28.87-50A33.11,33.11,0,0,0,191.73,125.07Zm-20,26.66a20,20,0,0,1-20,20v-30l-10,15-10-15v30h-20v-60h20l10,15,10-15a20,20,0,0,1,17.32,30A19.93,19.93,0,0,1,171.73,151.73Z" transform="translate(-91.73 -91.73)"/>
+                </svg>
+            </div>
+            <div class="burger md:hidden">
+                <div class="bar1 h-1 w-7 my-1.5 bg-gray-800 duration-300"></div>
+                <div class="bar2 h-1 w-7 my-1.5 bg-gray-800"></div>
+                <div class="bar3 h-1 w-7 my-1.5 bg-gray-800 duration-300"></div>
+            </div>
+        </div>
+        <ul class="links md:flex flex-col md:flex-row text-center w-full md:justify-around hidden">
+            <li>
+                <a href="#" class="block p-5">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#" class="block p-5">
+                    Services
+                </a>
+            </li>
+            <li>
+                <a href="#" class="block p-5">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="#" class="block p-5">
+                    Contact
+                </a>
+            </li>
+            <li>
+                <a href="#" class="block p-5">
+                    Blog
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <script src="public/dist/script.js"></script>
+</body>
+</html>
